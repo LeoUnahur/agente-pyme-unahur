@@ -75,18 +75,22 @@ python agente_pyme.py
 
 ---
 
-### Paso 2: Crear los dos archivos de seguridad (si aún no existen)
+### Paso 2: Crear los dos archivos de seguridad (si todavía no existen)
 
 Revisa el panel de la izquierda de VS Code:
 
-1. **`.gitignore`**: Crea este archivo si no está en la lista y dentro pon la línea `.env`. Esto es vital para que tu API Key no se suba pública a internet.
-2. **`.env.example`**: Crea este archivo si no existe y dentro pon la línea `NVIDIA_API_KEY="tu_api_key_aqui"`.
+1. **`.gitignore`**: Crea este archivo si no está en la lista y dentro poné la línea `.env`. Esto es importante para que tu API Key no se suba pública a internet.
+2. **`.env.example`**: Crea este archivo si no existe y dentro poné la línea `NVIDIA_API_KEY="tu_api_key_aqui"`.
 
 ---
 
 ### Paso 3: Guardar y subir los cambios a GitHub
 
-Ahora sí, vuelve a la terminal de VS Code y ejecuta los comandos:
+Ahora sí, volvé a la terminal de VS Code y ejecutá los comandos:
 
 ```bash
 git add .
+
+git commit -m "docs: adaptar README para proyecto institucional de IA UNAHUR"
+
+git push
