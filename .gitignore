@@ -23,3 +23,15 @@ credentials.json
 # Local configuration
 *.local
 *.local.*
+
+
+
+# Entorno virtual de Python
+.env-skills/
+venv/
+
+# Archivos basura y temporales de Python
+__pycache__/
+*.pyc
+.vscode/
+*.bak
