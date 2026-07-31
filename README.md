@@ -111,6 +111,6 @@ pip install openai httpx python-dotenv
 
    Licencia: Proyecto distribuido bajo la licencia Apache 2.0.
 
-   De Leonardo D. Baldini, estudiante de la Tecnicatura Universitaria en IA de Universidad Nacional de Hurlingham (UNAHUR) - Instituto de Tecnología e Ingeniería.
+   De Leonardo D. Baldini, estudiante de la Tecnicatura Universitaria en IA dictada por Instituto de Tecnología e Ingeniería de la Universidad Nacional de Hurlingham (UNAHUR) - .
    
 
