@@ -66,13 +66,15 @@ cd agente-pyme-unahur
 El entorno virtual aísla las librerías del proyecto para evitar conflictos con otros programas de tu sistema.
 
 En Windows (PowerShell / CMD / Terminal de VS Code):
-```
+```bash
 python -m venv venv
 .\venv\Scripts\activate
 ```
 
 En macOS / Linux:
-``` python3 -m venv venv
+```bash
+
+python3 -m venv venv
 source venv/bin/activate
 
 ```
@@ -82,7 +84,7 @@ source venv/bin/activate
 ### 4. Instalar las Dependencias
 Con el entorno virtual activado, instalá las librerías necesarias:
 
-```
+```bash
 pip install openai httpx python-dotenv
 
 ```
@@ -103,7 +105,7 @@ pip install openai httpx python-dotenv
    
    Para iniciar la ejecución del agente, corre:
 
-   ```
+   ```bash
    python agente_pyme.py
    ```
 
