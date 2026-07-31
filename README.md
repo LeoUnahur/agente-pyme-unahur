@@ -59,7 +59,8 @@ cd agente-pyme-unahur
 
 (Recordá reemplazar TU_USUARIO por tu usuario de GitHub).
 
-3. Crear y Activar el Entorno Virtual
+### 3. Crear y Activar el Entorno Virtual
+
 El entorno virtual aísla las librerías del proyecto para evitar conflictos con otros programas de tu sistema.
 
 En Windows (PowerShell / CMD / Terminal de VS Code):
@@ -74,30 +75,30 @@ source venv/bin/activate
 
 💡 Tip para VS Code: Presioná Ctrl + Shift + P (o Cmd + Shift + P en Mac), buscá Python: Select Interpreter y seleccioná el entorno que acabás de crear (./venv/Scripts/python.exe).
 
-4. Instalar las Dependencias
+### 4. Instalar las Dependencias
 Con el entorno virtual activado, instalá las librerías necesarias:
 
 pip install openai httpx python-dotenv
 
-5. Configurar las Claves de Acceso (API Keys):
+### 5. Configurar las Claves de Acceso (API Keys):
 
    Por razones de seguridad, las claves secretas nunca se suben al repositorio público.
 
-   1)Creá un archivo llamado .env en la raíz del proyecto.
+   5.1 Creá un archivo llamado .env en la raíz del proyecto.
 
-   2)Abrí el archivo .env.example que viene en el proyecto como referencia.
+   5.2 Abrí el archivo .env.example que viene en el proyecto como referencia.
 
-   3)Copiá su contenido dentro del nuevo archivo .env y pegá tu API Key real de NVIDIA:
+   5.3 Copiá su contenido dentro del nuevo archivo .env y pegá tu API Key real de NVIDIA:
 
    NVIDIA_API_KEY="nvapi-tu-clave-aqui"
 
-   6. Ejecutar el Agente de IA
+### 6. Ejecutar el Agente de IA
    
    Para iniciar la ejecución del agente, corre:
 
    python agente_pyme.py
 
-   📄 Licencia y Contacto
+   ### 📄 Licencia y Contacto
 
    Licencia: Proyecto distribuido bajo la licencia Apache 2.0.
 
