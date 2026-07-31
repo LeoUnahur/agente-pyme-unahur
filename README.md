@@ -43,3 +43,64 @@ El agente procesa variables territoriales estructuradas en tres dimensiones esen
 * **Modelo LLM:** Integración vía NVIDIA NIM Client (Llama 3 Instruct Series).
 * **Despliegue Objetivo:** Migración proyectada hacia inferencia local (*Ollama / Llama 8B*) en infraestructura de la UNAHUR para garantizar soberanía de datos y costo cero de cómputo.
 
+## 📦 Guía de Instalación y Ejecución Paso a Paso
+
+Si querés clonar este repositorio y ejecutar el proyecto en tu propia computadora, seguí estos pasos:
+
+### 1. Requisitos Previos
+* Tener instalado [Python 3.10](https://www.python.org/) o superior.
+* Tener instalado [Git](https://git-scm.com/).
+
+### 2. Clonar el Repositorio
+Abrí tu terminal o consola de comandos y ejecutá:
+```bash
+git clone [https://github.com/TU_USUARIO/agente-pyme-unahur.git](https://github.com/TU_USUARIO/agente-pyme-unahur.git)
+cd agente-pyme-unahur
+
+(Recordá reemplazar TU_USUARIO por tu usuario de GitHub).
+
+3. Crear y Activar el Entorno Virtual
+El entorno virtual aísla las librerías del proyecto para evitar conflictos con otros programas de tu sistema.
+
+En Windows (PowerShell / CMD / Terminal de VS Code):
+
+python -m venv venv
+.\venv\Scripts\activate
+
+En macOS / Linux:
+
+python3 -m venv venv
+source venv/bin/activate
+
+💡 Tip para VS Code: Presioná Ctrl + Shift + P (o Cmd + Shift + P en Mac), buscá Python: Select Interpreter y seleccioná el entorno que acabás de crear (./venv/Scripts/python.exe).
+
+4. Instalar las Dependencias
+Con el entorno virtual activado, instalá las librerías necesarias:
+
+pip install openai httpx python-dotenv
+
+5. Configurar las Claves de Acceso (API Keys):
+
+   Por razones de seguridad, las claves secretas nunca se suben al repositorio público.
+
+   1)Creá un archivo llamado .env en la raíz del proyecto.
+
+   2)Abrí el archivo .env.example que viene en el proyecto como referencia.
+
+   3)Copiá su contenido dentro del nuevo archivo .env y pegá tu API Key real de NVIDIA:
+
+   NVIDIA_API_KEY="nvapi-tu-clave-aqui"
+
+   6. Ejecutar el Agente de IA
+   
+   Para iniciar la ejecución del agente, corre:
+
+   python agente_pyme.py
+
+   📄 Licencia y Contacto
+
+   Licencia: Proyecto distribuido bajo la licencia Apache 2.0.
+
+   De Leonardo D. Baldini, estudiante de la Tecnicatura Universitaria en IA de Universidad Nacional de Hurlingham (UNAHUR) - Instituto de Tecnología e Ingeniería.
+   
+
