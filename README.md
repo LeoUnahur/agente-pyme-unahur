@@ -57,28 +57,35 @@ Abrí tu terminal o consola de comandos y ejecutá:
 git clone [https://github.com/TU_USUARIO/agente-pyme-unahur.git](https://github.com/TU_USUARIO/agente-pyme-unahur.git)
 cd agente-pyme-unahur
 
-(Recordá reemplazar TU_USUARIO por tu usuario de GitHub).
+```
+
+(Recordá reemplazar TU_USUARIO ``por tu usuario de GitHub).
 
 ### 3. Crear y Activar el Entorno Virtual
 
 El entorno virtual aísla las librerías del proyecto para evitar conflictos con otros programas de tu sistema.
 
 En Windows (PowerShell / CMD / Terminal de VS Code):
-
+```
 python -m venv venv
 .\venv\Scripts\activate
+```
 
 En macOS / Linux:
-
-python3 -m venv venv
+``` python3 -m venv venv
 source venv/bin/activate
+
+```
 
 💡 Tip para VS Code: Presioná Ctrl + Shift + P (o Cmd + Shift + P en Mac), buscá Python: Select Interpreter y seleccioná el entorno que acabás de crear (./venv/Scripts/python.exe).
 
 ### 4. Instalar las Dependencias
 Con el entorno virtual activado, instalá las librerías necesarias:
 
+```
 pip install openai httpx python-dotenv
+
+```
 
 ### 5. Configurar las Claves de Acceso (API Keys):
 
@@ -96,7 +103,9 @@ pip install openai httpx python-dotenv
    
    Para iniciar la ejecución del agente, corre:
 
+   ```
    python agente_pyme.py
+   ```
 
    ### 📄 Licencia y Contacto
 
